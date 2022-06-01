@@ -2,11 +2,13 @@ import modificador from './modificador.js';
 import ingredientes from './ingredientes.js';
 
 const PEDIDO = ['macarrão', 'feijão', 'arroz', 'cuscuz', 'água', 'mel', 'mostarda', 'sanduiche'];
+const NUMEROS = [3, 5, 1, 2, 7, 10];
 
 modificador.capitalizarNovo(ingredientes, 'name');
 
 console.log(modificador.capitalizarNovo(ingredientes, 'name'));
-// console.log(modificador.capitalizarNovo(PEDIDO));
+console.log(modificador.capitalizarNovo(PEDIDO));
+console.log(modificador.ordenar(NUMEROS));
 
 //comando para saber se uma estrutura é um array
 // console.log(Array.isArray(ingredientes))
