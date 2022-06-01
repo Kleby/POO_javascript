@@ -1,13 +1,15 @@
 import modificador from './modificador.js';
 import ingredientes from './ingredientes.js';
 
-console.log(ingredientes[2].name);
-console.log(ingredientes[2].price);
-console.log(ingredientes[1]);
-console.log(typeof ingredientes)
+const PEDIDO = ['macarrão', 'feijão', 'arroz', 'cuscuz', 'água', 'mel', 'mostarda', 'sanduiche'];
+
+modificador.capitalizarNovo(ingredientes, 'name');
+
+console.log(modificador.capitalizarNovo(ingredientes, 'name'));
+// console.log(modificador.capitalizarNovo(PEDIDO));
 
 //comando para saber se uma estrutura é um array
-console.log(Array.isArray(ingredientes))
+// console.log(Array.isArray(ingredientes))
 
 // console.log(modificador);
 // const PEDIDO = ['macarrão', 'feijão', 'arroz', 'cuscuz', 'água', 'mel', 'mostarda', 'sanduiche'];

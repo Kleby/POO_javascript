@@ -1,3 +1,27 @@
+function fnCapitalizarNovo(colecao, atributo){
+    if( typeof(colecao) === 'object'){
+        //mapa retorna uma arry ler um array
+        var result = colecao.map(function(obj){
+            let maiuscula = obj[atributo].charAt(0).toUpperCase();
+            let complemento = obj[atributo].slice(1);
+            
+            obj[atributo] = maiuscula.concat(complemento);
+            return obj;
+
+        });
+
+    }
+    else {
+        var result = colecao.map(function( arr ){
+            let maiuscula = arr.charAt(0).toUpperCase();
+            let complemento = arr.slice(1);
+
+            arr = maiuscula.concat(complemento);
+        });
+    }
+    return result;
+}
+
 function capitalizar( arr ){
     let maiuscula = [];
     let complemento = [];
@@ -33,6 +57,7 @@ function caixaAlta(arr){
 }
 export default {
     key1: capitalizar,
+    capitalizarNovo: fnCapitalizarNovo,
     key2: ordemAlfa,
     key3 :caixaAlta
 };

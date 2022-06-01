@@ -1,22 +1,22 @@
 var ingredientes = [
     {
-        name: 'Alface',
+        name: 'alface',
         price: 2.5,
     },
     {
-        name: 'Tomate',
+        name: 'tomate',
         price: 1.25,
     },
     {
-        name: 'Ovo',
+        name: 'ovo',
         price: 1.0,
     },
     {
-        name: 'Queijo',
+        name: 'queijo',
         price: 1.0
     },
     {
-        name: 'Batata palha',
+        name: 'batata palha',
         price: 4.00,
     }
 ];
