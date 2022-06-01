@@ -4,9 +4,7 @@ function novoDiv( img ,nome ){
     let newDiv = document.createElement('div');
     let newIMG = document.createElement('img');
     let newP = document.createElement('p');
-
     newP.textContent = nome;
-    
     console.log(newP)
     newDiv.setAttribute('class', 'ingrediente');
     newP.setAttribute('class', 'nome-ingrediente');

@@ -1,0 +1,33 @@
+*{
+    margin:0 ; 
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+
+    max-width: 700px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+h1{
+    text-transform: uppercase; /*Deixa o texto maiusculo*/
+    border: 2px solid black;
+    margin:4rem;
+    text-align: center;
+}
+
+.ingrediente {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center ;
+    border-bottom: 1rem solid rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+.ingrediente img {
+    width: 5rem;
+}
+.nome-ingrediente {
+    margin-left: 2rem;
+}
